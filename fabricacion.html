@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Fabricación</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="fabricacion.css">
+    <link rel="stylesheet" href="cabecera.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html"> INICIO </a>
+            <nav class="navigation">
+                <ul>
+                    <li> <a href="recepcion.html"> Recepción de Mercaderia </a></li>
+                    <li> <a href="despecie.html"> Sala de Despecie </a></li>
+                    <li> <a href="fabricacion.html"> Fabricación </a></li>
+                    <li> <a href="venta.html"> Venta y Expedición </a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div class="datatable-container">
+        <div class="header-tools">
+            <div class="tools">
+                <ul>
+                    <li><span> <input type="checkbox"></span></li>
+                <li>
+                   <button>
+                       <i class="material-icons">add_circle</i>
+                   </button> 
+                </li>
+                <li>
+                    <button>
+                        <i class="material-icons">edit</i>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="material-icons">delete</i>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="material-icons">share</i>
+                    </button>
+                </li>
+            </ul>
+         </div>
+         
+         <div class="search">
+             <input type="text" name="" id="" class="search-input">
+         </div>
+        </div>
+    <div class="header_fixed">
+        <table>
+            <table class="datatable">
+            <thead>
+                <th></th>
+                <th>Estado</th>
+                <th>Descripción</th>
+                <th>Fecha de Creación</th>
+                <th>Lote</th>
+                <th>Nro Línea</th>
+                <th>Prioridad</th>
+                <th>Cantidad a Producir</th>
+                <th>Cantidad a Producir KG </th>
+                <th>Cod Almacen</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="no-recepcionado"></span></td>
+                    <td>Chorizo</td>
+                    <td>09/06/2020</td>
+                    <td>LOTE0011</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>20</td>
+                    <td>2.100</td>
+                    <td>Almacen</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="recepcionado"></span></td>
+                    <td>Pancho</td>
+                    <td>09/06/2020</td>
+                    <td>LOTE9911</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>80</td>
+                    <td>2.010</td>
+                    <td>Almacen-1</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="lejos"></span></td>
+                    <td>Panceta</td>
+                    <td>09/06/2020</td>
+                    <td>LOTE2011</td>
+                    <td>2</td>
+                    <td>1</td>
+                    <td>20</td>
+                    <td>4.330</td>
+                    <td>Almacen</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="recepcionado"></span></td>
+                    <td>Jamón Crudo</td>
+                    <td>10/06/2020</td>
+                    <td>LOTE5011</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>30</td>
+                    <td>1.800</td>
+                    <td>Almacen -2</td>
+                    
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="lejos"></span></td>
+                    <td>Jamón Cocido</td>
+                    <td>11/06/2020</td>
+                    <td>LOTE1011</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>20</td>
+                    <td>1.500</td>
+                    <td>Almacen</td>
+                   
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="no-recepcionado"></span></td>
+                    <td>Salame</td>
+                    <td>12/06/2020</td>
+                    <td>LOTE5501</td>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>10</td>
+                    <td>3.150</td>
+                    <td>Almacen-1</td>
+                  
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="recepcionado"></span></td>
+                    <td>Pepperoni</td>
+                    <td>12/06/2020</td>
+                    <td>LOTE4401</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>20</td>
+                    <td>2.100</td>
+                    <td>Almacen-2</td>
+                    
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="recepcionado"></span></td>
+                    <td>Grasa de Cerdo</td>
+                    <td> 13/06/2020</td>
+                    <td>LOTE5021</td>
+                    <td></td>
+                    <td>2</td>
+                    <td>15</td>
+                    <td>1.010</td>
+                    <td>Almacen-2</td>
+                   
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Recepción de Mercadería</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./recepcion.css">
+    <link rel="stylesheet" href="cabecera.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html"> INICIO </a>
+            <nav class="navigation">
+                <ul>
+                    <li> <a href="recepcion.html"> Recepción de Mercaderia </a></li>
+                    <li> <a href="despecie.html"> Sala de Despecie </a></li>
+                    <li> <a href="fabricacion.html"> Fabricación </a></li>
+                    <li> <a href="#"> Venta y Expedición </a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div class="datatable-container">
+        <div class="header-tools">
+            <div class="tools">
+                <ul>
+                    <li><span> <input type="checkbox"></span></li>
+                <li>
+                   <button>
+                       <i class="material-icons">add_circle</i>
+                   </button> 
+                </li>
+                <li>
+                    <button>
+                        <i class="material-icons">edit</i>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="material-icons">delete</i>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="material-icons">share</i>
+                    </button>
+                </li>
+            </ul>
+         </div>
+         <div class="search">
+             <input type="text" name="" id="" class="search-input">
+         </div>
+        </div>
+        <table class="datatable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Estado</th>
+                    <th>Proveedor</th>
+                    <th>RUC</th>
+                    <th>Almacén</th>
+                    <th>Fecha de Recepción</th>
+                    <th>Nro Doc</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="recepcionado"></span></td>
+                    <td>IMAQ S.A </td>
+                    <td>800256963</td>
+                    <td>General</td>
+                    <td>07/06/2020</td>
+                    <td>4756</td>
+                </tr>  
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="no-recepcionado"></span></td>
+                    <td>ORIENT CONSULTING </td>
+                    <td>8003147369</td>
+                    <td>Almacen - 2</td>
+                    <td>07/06/2020</td>
+                    <td>8455</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="no-recepcionado"></span></td>
+                    <td>SION TRADER GROUP </td>
+                    <td>8001475914</td>
+                    <td>General</td>
+                    <td>09/06/2020</td>
+                    <td>7531</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="lejos"></span></td>
+                    <td>LR CONSULTORA </td>
+                    <td>800256963</td>
+                    <td>Almacen - 1</td>
+                    <td>10/06/2020</td>
+                    <td>8896</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="lejos"></span></td>
+                    <td>GANADERIA ALTOS </td>
+                    <td>800741222</td>
+                    <td>Almacen - 1</td>
+                    <td>10/06/2020</td>
+                    <td>0236</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="lejos"></span></td>
+                    <td>PLAYA DITA SA</td>
+                    <td>800256963</td>
+                    <td>General</td>
+                    <td>08/06/2020</td>
+                    <td>4411</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="no-recepcionado"></span></td>
+                    <td>FRIGO MAS SA</td>
+                    <td>80037512</td>
+                    <td>Almacen - 1</td>
+                    <td>11/06/2020</td>
+                    <td>8894</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="recepcionado"></span></td>
+                    <td>ATHENA FOODS</td>
+                    <td>80030591</td>
+                    <td>Almacen - 2</td>
+                    <td>11/06/2020</td>
+                    <td>1112</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="lejos"></span></td>
+                    <td>POLLPAR SA</td>
+                    <td>80021456</td>
+                    <td>Almacen - 1</td>
+                    <td>12/06/2020</td>
+                    <td>4030</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer-tools">
+            <div class="list-items">
+                Show
+                <select name="n-entries" id="n-entries" class="n-entries">
+                    <option value="15">5</option>
+                    <option value="10" selected>8</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><span class="active">1</span></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>4</button></li>
+                    <li><span>...</span></li>
+                    <li><button>9</button></li>
+                    <li><button>10</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>

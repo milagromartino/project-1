@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Despecie</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="despecie.css">
+    <link rel="stylesheet" href="cabecera.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="cabecera.html"> INICIO </a>
+            <nav class="navigation">
+                <ul>
+                    <li> <a href="recepcion.html"> Recepción de Mercaderia </a></li>
+                    <li> <a href="despecie.html"> Sala de Despecie </a></li>
+                    <li> <a href="fabricacion.html"> Fabricación </a></li>
+                    <li> <a href="venta.html"> Venta y Expedición </a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+    <div class="datatable-container">
+        <div class="header-tools">
+            <div class="tools">
+                <ul>
+                    <li><span> <input type="checkbox"></span></li>
+                <li>
+                   <button>
+                       <i class="material-icons">add_circle</i>
+                   </button> 
+                </li>
+                <li>
+                    <button>
+                        <i class="material-icons">edit</i>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="material-icons">delete</i>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="material-icons">share</i>
+                    </button>
+                </li>
+            </ul>
+         </div>
+         <div class="search">
+             <input type="text" name="" id="" class="search-input">
+         </div>
+        </div>
+        <table class="datatable">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Estado</th>
+                    <th>ID Producto</th>
+                    <th>Lote</th>
+                    <th>Producto</th>
+                    <th>Peso Bruto</th>
+                    <th>Unidades</th>
+                    <th>Salida Producto</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="recepcionado"></span></td>
+                    <td> </td>
+                    <td>LOT0154 </td>
+                    <td>Vacuno</td>
+                    <td>1.825</td>
+                    <td>1</td>
+                    <td>Costeleta</td>
+                </tr>  
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="no-recepcionado"></span></td>
+                    <td> </td>
+                    <td>LOT0149 </td>
+                    <td>Vacuno</td>
+                    <td>5.691</td>
+                    <td>4</td>
+                    <td>Tapa Cuadril</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="no-recepcionado"></span></td>
+                    <td> </td>
+                    <td>LOT0446 </td>
+                    <td>Vacuno</td>
+                    <td>3.600</td>
+                    <td>6</td>
+                    <td>Bola de Lomo</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="lejos"></span></td>
+                    <td> </td>
+                    <td>LOT4112 </td>
+                    <td>Porcino</td>
+                    <td>5.144</td>
+                    <td>100</td>
+                    <td>Manitas de Cerdo</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="lejos"></span></td>
+                    <td> </td>
+                    <td>LOT7411 </td>
+                    <td>Porcino</td>
+                    <td>4.100</td>
+                    <td>50</td>
+                    <td>Panceta</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="lejos"></span></td>
+                    <td> </td>
+                    <td>LOT4410</td>
+                    <td>Vacuno</td>
+                    <td>2.355</td>
+                    <td>4</td>
+                    <td>Vacio</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="no-recepcionado"></span></td>
+                    <td> </td>
+                    <td>LOT0588</td>
+                    <td>Vacuno</td>
+                    <td>8.900</td>
+                    <td>7</td>
+                    <td>Falda</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="recepcionado"></span></td>
+                    <td> </td>
+                    <td>LOT7500</td>
+                    <td>Porcino</td>
+                    <td>4.050</td>
+                    <td>3</td>
+                    <td>Aguja</td>
+                </tr>
+                <tr>
+                    <td class="table-checkbox"><input type="checkbox" name="" id=""></td>
+                    <td> <span class="lejos"></span></td>
+                    <td> </td>
+                    <td>LOT0410</td>
+                    <td>Porcino</td>
+                    <td>3.650</td>
+                    <td>6</td>
+                    <td>Chuleta de Cerdo</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="footer-tools">
+            <div class="list-items">
+                Show
+                <select name="n-entries" id="n-entries" class="n-entries">
+                    <option value="15">5</option>
+                    <option value="10" selected>8</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+            <div class="pages">
+                <ul>
+                    <li><span class="active">1</span></li>
+                    <li><button>2</button></li>
+                    <li><button>3</button></li>
+                    <li><button>4</button></li>
+                    <li><span>...</span></li>
+                    <li><button>9</button></li>
+                    <li><button>10</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+<body>
+</body>
+</html>
