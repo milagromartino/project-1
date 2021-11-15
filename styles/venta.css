@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-:root{
+body{
+    background: #2f3542
+ 
+}
+
+:root{ 
     --primary-color: white;
     --secondary-color:rgb(61,68,73);
     --highlight-color:#3282b8;
@@ -38,7 +43,7 @@
     background-color: var(--dt-background-color-container);
     border-radius: var(--dt-border-radius);
     color: var(--dt-text-color);
-    width: 1050px;
+    width: 1000px;
     margin: 0 auto;
     font-size: 12px;
 }
@@ -167,9 +172,9 @@
     background-color: var(--dt-even-row-color);
 }
 
-/*.datatable-container .datatable tbody tr:hover{
+.datatable-container .datatable tbody tr:hover{
     background-color: var(--dt-hover-cell-color);
-}*/
+}
 
 .datatable-container .datatable tbody tr .recepcionado::after,
 .datatable-container .datatable tbody tr .no-recepcionado::after,
@@ -209,13 +214,13 @@
     background-color: var(--dt-estado-recepcionado-color);
 }
 
-/*.datatable-container .datatable tbody tr .no-recepcionado::before{
+.datatable-container .datatable tbody tr .no-recepcionado::before{
     background-color: var(--dt-estado-no-recepcionado-color);
 }
 
 .datatable-container .datatable tbody tr .lejos::before{
     background-color: var(--dt-estado-lejos-color);
-}*/
+}
 
 .container{
     width: 95%;
