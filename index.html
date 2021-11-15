@@ -1,20 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MTS | LOGIN</title>
-    <link rel="stylesheet" href="./styles/style.css">
-</head>
-<body>
-    <form action="./pages/cabecera.html" class="form-box">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="../styles/cabecera.css">
+  </head>
+  <body>
+    <div id="main">
+      <form
+        name="form"
+        class="form-box"
+      >
         <h1 class="form-title">Log In</h1>
-        <input type="text" placeholder="username">
-        <input type="password" placeholder="password">
-        <button type="submit">
-            Login
-        </button>
-    </form>
-</body>
+        <input type="text" placeholder="username" name="username" />
+        <input type="password" placeholder="password" name="password" />
+        <button type="button" onclick="go()">Login</button>
+      </form>
+    </div>
+    <script>
+      function go() {
+        if (
+            document.form.password.value == "123456" &&
+            document.form.username.value == "milibonita"
+        ) {
+            location.href = '/pages/cabecera.html'
+        } else {
+            alert("Por favor ingrese, nombre de usuario y contraseña correctos.");
+            location.href = '/index.html'
+            return;
+        }
+      }
+    </script>
+  </body>
 </html>
